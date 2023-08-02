@@ -1,0 +1,8 @@
+p {
+    color: red;
+    font-size: 48px;
+    background-color: royalblue;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
