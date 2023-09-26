@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks = {
+            telugu : 98,
+            hindi :99,
+            english :100,
+            computers: 100,
+        }
+
+        console.log("Telugu :", marks.telugu)
+        console.log("Hindi : ", marks.hindi)
+        console.log("English :", marks.english)
+        console.log("computers :", marks.computers)
+
+
+        //Another way of accessing objects
+        console.log(marks["telugu"])
+        console.log(marks["computers"])
+
+        var person = {
+            firstname : "Krishna",
+            lastname : "Bendalam",
+            age : 29,
+            mobile : 8142081366,
+            company : "Entri",
+            fullname : function(){
+                console.log(this.firstname + this.lastname);
+            },
+            smile : function(){
+                console.log(this.firstname, "is Smiling")
+            }
+        }
+
+        console.log(person.mobile);
+        console.log(person.fullname())
+        console.log(person.smile())
+
+
+       
+        
+    </script>
+</body>
+</html>

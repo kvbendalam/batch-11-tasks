@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Username:</label>
+        <input type="text" value="" id="username"/>
+        <label>Password:</label>
+        <input type="password" value="" id="password"/>
+        <input type="button" value="submit" onclick="submitForm()"/>
+    </div>
+
+    <script>
+        function submitForm(){
+            var username = document.getElementById("username")
+            var password = document.getElementById("password")
+            console.log(username.value);
+            console.log(password.value);
+        }
+        
+    </script>
+</body>
+</html>

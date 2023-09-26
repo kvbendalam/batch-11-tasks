@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Username</label>
+    <input type="text" id="username"/><br/>
+    <label>Password</label>
+
+    <input type="password" id="password"/><br/>
+    <label>Mobile</label>
+
+    <input type="text" id="mobile"/><br/>
+    <label>DOB</label>
+
+    <input type="date" id="dob"/><br/>
+
+    <label>Gender</label>
+
+    <input type="radio" name="gender" value="male" />Male
+    <input type="radio" name="gender" value="female"/>Female
+
+
+    <input type="button" value="signup" onclick="signUp()"/>
+
+
+    <script>
+        function signUp(){
+            var username = document.getElementById("username")
+            var password = document.getElementById("password")
+            var mobile = document.getElementById("mobile")
+            var dob = document.getElementById("dob")
+            var gender = document.getElementsByName("gender")
+
+
+            console.log(username.value)
+            console.log(password.value)
+            console.log(mobile.value)
+            console.log(dob.value)
+
+            for(var i=0;i<gender.length;i++){
+                if(gender[i].checked){
+                    console.log(gender[i].value)
+                }
+            }
+        }
+    </script>
+</body>
+</html>

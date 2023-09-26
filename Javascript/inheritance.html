@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+
+            walk(){
+                console.log(this.name + " is Walking")
+            }
+        }
+
+
+        class Student extends Person{
+            constructor(name, age, rollno, gender){
+                super(name, age)
+                this.rollno = rollno;
+                this.gender = gender;
+            }
+
+            read(){
+                console.log(this.name + " is Reading")
+            }
+        }
+
+
+        const s1 = new Student("Krishna", 28, 110079, "m")
+        console.log(s1)
+        s1.walk()
+        s1.read()
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id ="username" onblur = "blurEvent()"/>
+    <input type="text" id ="Password" onfocus = "focusEvent()"/>
+
+    <label>Change Event:</label>
+    <input type="text" id="email" value="change" onchange="changeEvent()"/>
+
+    <input type="text" id="select" value="some value" onselect="selectHandler()"/>
+
+    <script>
+        function blurEvent(){
+            var username = document.getElementById("username")
+            console.log(username.value)
+        }
+
+        function focusEvent(){
+            var password = document.getElementById("Password");
+            password.style.border= "1px solid black"
+            password.style.backgroundColor ="blue"
+        }
+
+        function selectHandler(){
+            alert("Text is selected")
+        }
+
+        function changeEvent(){
+            console.log("Change is event is happend")
+        }
+
+        //onchange -> on change will excute once the content is changed from one to another.
+        //onsubmit -> form submit
+        //onreset -> after submitting for if you want reset the values of the form 
+        //onkeypress
+        //onkeydown
+        //onkeyup
+
+    </script>
+</body>
+</html>

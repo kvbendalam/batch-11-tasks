@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name, age, mobile){
+                this.name = name;
+                this.age = age;
+                this.mobile = mobile;
+            }
+
+            walk(){
+                console.log(this.name + " is walking")
+            }
+
+            reading(){
+                console.log(this.name + " is reading")
+            }
+        }
+
+
+        var p1 = new Person("Krishna", 29, "929292929292")
+        p1.walk()
+        p1.reading()
+        var p2 = new Person("Dharmesh", 26, "292929292")
+        p2.walk()
+        p2.reading()
+        console.log(p1);
+        console.log(p2);
+    </script>
+</body>
+</html>

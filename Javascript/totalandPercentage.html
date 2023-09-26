@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            telugu:99,
+            hindi:98,
+            english:100,
+            computers:100,
+            science:100,
+            total : function(){
+                return this.telugu+this.hindi+this.english+this.computers+this.science
+            },
+            percentage : function(){
+                console.log(this.total()/5)
+            }
+        }
+
+        console.log("Telugu", obj.telugu)
+        console.log("Hindi", obj.hindi)
+
+        var total = obj.total()
+        console.log("Total", total)
+        console.log("Percentage", obj.percentage())
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para1{
+            font-size:24px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">This is paragraph1</p>
+    <p class="para1">This is paragraph2</p>
+    <p class="para1">This is paragraph3</p>
+
+    <script>
+        var result = document.getElementsByClassName("para1")
+        console.log(result[0].innerHTML);
+        console.log(result[2].innerHTML);
+        console.log(result[1].innerHTML)
+    </script>
+
+</body>
+</html>
