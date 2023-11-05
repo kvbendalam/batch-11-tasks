@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #search{
+            width:50%;
+            height:30px;
+            border:1px solid black;
+            color:blue;
+        }
+        #searchBtn{
+            width:100px;
+            color:black;
+            font-size: medium;
+            margin:2%;
+        }
+
+        li{
+            background-color: antiquewhite;
+            color:black;
+            font-size: 24px;
+            border:1px solid black;
+            margin-top: 1%;
+            list-style-type: none;
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To do List</h1>
+        <input type="text" id="search"/><br/>
+        <input type="button" name="Search" value="Search" id="searchBtn" onclick="search()"/>
+        <ul id="todoList"></ul>
+    </div>
+
+    
+    <script>
+        function search(){            
+            var searchItem = document.getElementById("search").value
+
+            var li = document.createElement('li')
+            li.innerHTML = searchItem;
+
+            var ul = document.getElementById("todoList")
+            ul.appendChild(li)
+        }
+    </script>
+</body>
+</html>
