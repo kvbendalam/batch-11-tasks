@@ -1,12 +1,13 @@
-import React, { Component } from "react"
-import './Course.css'
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
-class Course extends Component {
-    render() {
-        return (
-            <p className="demo">This is course component</p>
-        )
-    }
+function Course() {
+
+    const url = useParams()
+
+    return (
+        <div>Welcome to {url.name} course</div>
+    )
 }
 
-export default Course;
+export default Course
