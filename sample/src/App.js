@@ -11,7 +11,7 @@ import Course from './Course'
 // import Listrendering from './Listrendering';
 // import ListRenderingS from './ListRenderingS';
 // import ConditionalRendering from './ConditionalRendering';
-import MarksTable from './MarksTable';
+// import MarksTable from './MarksTable';
 import Login from './Login'
 import Birthday from './Birthday';
 // import Lifecycle from './Lifecycle';
@@ -22,18 +22,27 @@ import Birthday from './Birthday';
 import Fetch from './Fetch'
 import Axios from './Axios';
 import FetchFun from './FetchFun';
+import ApicallsInFun from './ApicallsInFun'
+import Postmethod from './Postmethod';
+import Putmethod from './Putmethod';
+import Delete from './Delete';
+import ComponentA from './ComponentA';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MarksTable />} />
+        <Route path="/" element={<ComponentA />} />
         <Route path="/login" element={<Login />} />
         <Route path="/birthday" element={<Birthday />} />
         <Route path="/course/:name" element={<Course />} />
         <Route path="/todo" element={<Fetch />} />
         <Route path="/api" element={<Axios />} />
         <Route path="/FetchInFun" element={<FetchFun />} />
+        <Route path="/apiinfun" element={<ApicallsInFun />} />
+        <Route path="/post" element={<Postmethod />} />
+        <Route path="/put" element={<Putmethod />} />
+        <Route path="/delete" element={<Delete />} />
       </Routes>
       {/* <Employee /> */}
       {/* <Course /> */}
